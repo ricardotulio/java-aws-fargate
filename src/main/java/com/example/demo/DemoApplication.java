@@ -21,7 +21,7 @@ public class DemoApplication {
 
 	@GetMapping("/health") 
 	public String getHealth() {
-		return "ok";
+		return "ok!!!";
 	}
 
 } 
