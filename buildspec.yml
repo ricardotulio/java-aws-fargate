@@ -9,4 +9,5 @@ phases:
         - echo Build complete.
 artifacts:
   files:
-    - target/app.jar
+    - app.jar
+  discard-paths: yes
