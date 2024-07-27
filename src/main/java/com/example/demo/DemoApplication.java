@@ -19,4 +19,9 @@ public class DemoApplication {
 		return "Hello, world!";
 	}
 
-}
+	@GetMapping("/health") 
+	public String getHealth() {
+		return "ok";
+	}
+
+} 
