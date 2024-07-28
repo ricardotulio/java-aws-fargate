@@ -3,6 +3,10 @@ os: linux
 files:
   - source: /target/app.jar
     destination: /home/ec2-user/ministore-api
+  - source: /scripts/
+    destination: /home/ec2-user/ministore-api/scripts/
+  - source: /appspec.yml
+    destination: /home/ec2-user/ministore-api/appspec.yml
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
