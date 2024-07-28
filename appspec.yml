@@ -4,6 +4,14 @@ files:
   - source: /target/app.jar
     destination: /home/ec2-user/ministore-api
 hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: scripts/configure_application.sh
+      timeout: 300
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/start_server.sh
       timeout: 300
