@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOG_FILE=/home/ec2-user/stop_server.log
-APP_JAR="/home/ec2-user/ministore-api/app.jar"
+APP_JAR="/home/ec2-user/ministore-api/target/app.jar"
 echo "Checking if the Spring Boot application is running..." > $LOG_FILE
 
 # Check if the application is running
